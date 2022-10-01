@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reach Me</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Home Page</a>
+                </li>
+                <li>
+                    <a href="./reachme.html">Reach Me</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Contact Me</h1>
+    </header>
+
+      <main>
+            <form action="./thanks.html" method="post" name="LESSON3-reach-me" netlify>
+               <fieldset>
+                <legend>Your information</legend>
+                <div>
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" name="firstName" id="firstName" required maxlength="15" minlength="1" placeholder="Vilas"><br>
+                    <small>REQUIRED</small>
+                </div>
+
+                <div>
+                    <label for="laststName">Last Name:</label><br>
+                    <input type="text" name="lastName" id="lastName" required maxlength="25" minlength="1" placeholder="Desai"><br>
+                    <small>REQUIRED!</small>
+                </div>
+                <div>
+                    <label for="company">Company:</label><br>
+                    <input type="text" name="company" id="company" maxlength="50"><br>
+                    <small>REQUIRED</small>
+                </div>
+
+                <div>
+                    <label for="noOfPeople">Number of Workers:</label><br>
+                    <aspan>N/A</aspan><input type="radio" name="noOfPeople" id="noOfPeople" checked><br>
+                    <span>1-35</span><input type="radio" name="noOfPeople" id="noOfPeople" value="1 - 20"><br>
+                    <span>40-100</span><input type="radio" name="noOfPeople" id="noOfPeople" value="40 - 100"><br>
+                </div>
+               </fieldset>
+
+               <fieldset>
+                <legend>Your contact option</legend>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" required placeholder="steverogers@gmail.com"><br>
+                    <small>REQUIRED</small>  
+                </div>
+                <div>
+                    <label for="tel">Phone:</label><br>
+                    <input type="tel" name="tel" id="tel" placeholder="+12323454556">  
+                </div>
+               </fieldset> 
+
+               <fieldset>
+                <legend>Your purpose of contact</legend>
+                <div>
+                    <label for="inquiry">What is your Inquiry:</label><br>
+                    <select name="inquiry" id="inquiry" required >
+                        <option>Select an inquiry option... </option>
+                        <option value="employment">Employment opportunity</option>
+                        <option value="business">Business opportunity</option>
+                        <option value="general">General inquiry</option>
+                       </select><br>
+                       <small>REQUIRED</small>  
+                </div>
+
+                <div>
+                    <label for="mesg">Massage:</label><br>
+                    <textarea name="mesg" id="mseg" cols="30" rows="10" required placeholder="Your inquiry here..."></textarea><br>
+
+                    <small>REQUIRED</small>
+                </div>
+
+               </fieldset> 
+
+               <div>
+                <input type="submit" value="Submit inquiry">
+               </div>
+            </form>
+    </main>
+    <footer>&copy;2022 Vilas Desai</footer>
+</body>
+</html>
